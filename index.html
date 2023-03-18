@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>My Script </title>
+    <style>
+        .header{
+            width: 100%;
+            position: relative;
+            text-align: center;
+        }
+        .titel {
+            border-bottom: 2px solid rgb(11, 4, 4);
+
+        }
+        .allcont {
+            position: absolute;
+            width: 500px;
+            left: 50%; 
+            transform: translate(-50%);
+
+           
+            text-align: center;
+        }
+        .divans {
+            border-top: 2px solid rebeccapurple;
+        }
+        .ans {
+            text-align:left;
+            margin-left: 40px;
+        }
+        .inp {
+            margin-top: 20px;
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            
+        }
+        .bot {
+            margin: 20px;
+            width: 200px;
+            height: 30px;
+            border: 2px solid brown;
+            border-radius: 5px;
+
+        }
+        .section {
+            margin-bottom: 30px;
+            border: 4px solid blue;
+            border-radius: 5px;
+        }
+        .spanfooter {
+            color: rgb(110, 169, 149);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ezzadeen Almekhlafy</h1>
+        
+    </div>
+    <div class="body">
+    <div class="allcont">
+        <div class="section">
+            <div class="titel">
+                <h3><b>1. Check for Anagrams</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp1A" class="inp" type="text" placeholder="Enter the frist string">
+                <input id="inp1B" class="inp" type="text" placeholder="Enter the second string">
+              <div>  <input class="bot" type="button" value="Check" onclick="test1()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans1" class="ans">The Anagrams is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>2. Slice an Array</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp2A" class="inp" type="text" placeholder="Enter the Array use spase ">
+                <input id="inp2B" class="inp" type="text" placeholder="Start index">
+                <input id="inp2C" class="inp" type="text" placeholder="End index">
+              <div>  <input class="bot" type="button" value="Check" onclick="test2()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans2" class="ans">The new Array is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>3. Split a String into Words</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp3A" class="inp" type="text" placeholder="Enter the string">
+              <div>  <input class="bot" type="button" value="Check" onclick="test3()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans3" class="ans">The Words is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>4. Calculate the Age Based on a Date of Birth</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp4A" class="inp" type="date">
+              <div>  <input class="bot" type="button" value="Check" onclick="test4()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans4" class="ans">Your age is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>5. Check if a String is a Valid Email Address</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp5A" class="inp" type="email" placeholder="Enter yout Email">
+              <div>  <input class="bot" type="button" value="Check" onclick="test5()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans5" class="ans">Email is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>6. Replace All Occurrences of a Substring in a String</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp6A" class="inp" type="text" placeholder="Enter your string">
+                <input id="inp6B" class="inp" type="text" placeholder="Sub string">
+                <input id="inp6C" class="inp" type="text" placeholder="replacement">
+              <div>  <input class="bot" type="button" value="Check" onclick="test6()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans6" class="ans">The new string is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>7. Find the Second Smallest Value in an Array</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp7A" class="inp" type="text" placeholder="Enter your string">
+              
+              <div>  <input class="bot" type="button" value="Check" onclick="test7()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans7" class="ans">Second Smallest Value is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>8. Find the Difference Between Two Arrays</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp8A" class="inp" type="text" placeholder="Enter frist Array">
+                <input id="inp8B" class="inp" type="text" placeholder="Enter second string">
+              
+              <div>  <input class="bot" type="button" value="Check" onclick="test8()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans8" class="ans">The difference Between Arrays is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>9. Format a Time Duration</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp9A" class="inp" type="number" placeholder="Enter number of second">
+              
+              <div>  <input class="bot" type="button" value="Check" onclick="test9()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans9" class="ans">Format a Time is : </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="titel">
+                <h3><b>10. Convert a String to CamelCase</b></h3>
+            </div>
+            <div class="divinp">
+                <input id="inp10A" class="inp" type="number" placeholder="Enter number of second">
+              
+              <div>  <input class="bot" type="button" value="Check" onclick="test10()"></div>
+            </div>
+            <div class="divans">
+                <h3 id="ans10" class="ans">Convert to CamelCase: </h3>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>All &copy; By <span class="spanfooter">Ezzadeen Almekhlafy</span></h1>
+            
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
